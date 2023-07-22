@@ -60,3 +60,13 @@ WHERE
 Ans:
 select * from admissions
 where admission_date == discharge_date;
+
+# Q10: Show the patient id and the total number of admissions for patient_id 579.
+Ans:
+select 
+	patient_id,
+    count(*) as total_admissions
+from admissions
+where patient_id = 579;
+
+# Q11: 
