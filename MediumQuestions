@@ -24,3 +24,11 @@ where
   and len(first_name) >= 6;
 
 # Q4: 
+Ans: 
+select 
+    patient_id,
+    first_name,
+    last_name
+from patients
+natural join admissions
+where diagnosis = 'Dementia';
