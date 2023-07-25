@@ -32,3 +32,7 @@ select
 from patients
 natural join admissions
 where diagnosis = 'Dementia';
+
+# Q5: Display every patient's first_name. Order the list by the length of each name and then by alphabetically.
+Ans:
+
