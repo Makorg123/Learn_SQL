@@ -42,7 +42,20 @@ order by len(first_name) asc,first_name asc;
 
 # Q6: Show the total amount of male patients and the total amount of female patients in the patients table. Display the two results in the same row.
 Ans:
+Method1)
 select 
     sum(gender = 'M') as male_count,
     sum(gender = 'F') as female_count
-from patients
+from patients;
+
+Method2)
+select
+	(select count(*) from patients where gender = 'M') male_count
+	(select count(*) from patients where gender = 'F') female_count
+from patients;
+
+Method3)
+select 
+  sum(case when gender = 'M' then 1 end) as male_count,
+  sum(case when gender = 'F' then 1 end) as female_count 
+from patients;
