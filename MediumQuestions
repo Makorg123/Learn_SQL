@@ -88,3 +88,6 @@ select city, count(*) num_patients
 from patients
 group by city
 order by 2 desc, 1 asc;
+
+# Q10: Show first name, last name and role of every person that is either patient or doctor. The roles are either "Patient" or "Doctor".
+Ans:
