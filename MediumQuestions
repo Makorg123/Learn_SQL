@@ -70,3 +70,7 @@ select
 from patients
 where allergies in ('Penicillin','Morphine')
 order by allergies asc,first_name asc, last_name asc;
+
+# Q8: Show patient_id, diagnosis from admissions. Find patients admitted multiple times for the same diagnosis.
+Ans:
+
