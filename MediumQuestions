@@ -73,4 +73,11 @@ order by allergies asc,first_name asc, last_name asc;
 
 # Q8: Show patient_id, diagnosis from admissions. Find patients admitted multiple times for the same diagnosis.
 Ans:
-
+SELECT
+      patient_id,
+      diagnosis
+FROM admissions
+GROUP BY
+     patient_id,
+     diagnosis
+HAVING COUNT(*) > 1;
