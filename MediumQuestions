@@ -132,3 +132,7 @@ select
 from patients
 group by province_id
 having sum(height) >= 7000;
+
+# Q15: Show the difference between the largest weight and smallest weight for patients with the last name 'Maroni'
+Ans:
+
