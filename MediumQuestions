@@ -150,3 +150,6 @@ from
     admissions
 group by 1
 order by 2 desc;
+
+# Q17:
+Ans:
