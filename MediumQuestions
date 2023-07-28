@@ -193,3 +193,7 @@ SELECT
 from admissions a
   join doctors ph on ph.doctor_id = a.attending_doctor_id
 group by attending_doctor_id;
+
+# Q20: For each doctor, display their id, full name, and the first and last admission date they attended.
+Ans:
+
