@@ -196,4 +196,12 @@ group by attending_doctor_id;
 
 # Q20: For each doctor, display their id, full name, and the first and last admission date they attended.
 Ans:
-
+select 
+    doctor_id,
+    first_name || ' ' || last_name as full_name,
+    min(admission_date) as first_admission,
+    max(admission_date) as last_admission
+from doctors d
+join admissions a
+on d.doctor_id =  a.attending_doctor_id
+group by 1;
