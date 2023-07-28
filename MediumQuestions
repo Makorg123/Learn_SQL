@@ -168,3 +168,20 @@ where
 2. attending_doctor_id contains a 2 and the length of patient_id is 3 characters.
 
 Ans:
+select 
+    patient_id,
+    attending_doctor_id,
+    diagnosis
+from admissions
+where 
+     ( 
+       attending_doctor_id in (1,5,19)
+       and patient_id % 2 !=0
+     )
+    or
+    (
+      attending_doctor_id like '%2%'
+      and len(patient_id) = 3 
+    );
+
+# Q19:
