@@ -208,4 +208,11 @@ group by 1;
 
 # Q21: Display the total amount of patients for each province. Order by descending.
 Ans:
-
+select
+	province_name,
+	count(*) as patient_count 
+from patients
+join province_names 
+on patients.province_id = province_names.province_id
+group by 1
+order by 2 desc;
