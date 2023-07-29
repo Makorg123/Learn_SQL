@@ -216,3 +216,6 @@ join province_names
 on patients.province_id = province_names.province_id
 group by 1
 order by 2 desc;
+
+# Q22: For every admission, display the patient's full name, their admission diagnosis, and their doctor's full name who diagnosed their problem.
+Ans:
