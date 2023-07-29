@@ -205,3 +205,7 @@ from doctors d
 join admissions a
 on d.doctor_id =  a.attending_doctor_id
 group by 1;
+
+# Q21: Display the total amount of patients for each province. Order by descending.
+Ans:
+
