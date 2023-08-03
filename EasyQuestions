@@ -1,3 +1,4 @@
+-- All this question come from Hospital database.
 # Q1: Show first name, last name, and gender of patients whose gender is 'M'.
 Ans: 
 SELECT first_name, last_name, gender
@@ -109,3 +110,7 @@ where
     or city like 'o%'
     or city like 'u%'
 order by city asc;
+
+-- From here all the question come from Northwind database.
+
+# Q1: Show the category_name and description from the categories table sorted by category_name.
