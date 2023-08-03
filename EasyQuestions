@@ -114,3 +114,7 @@ order by city asc;
 -- From here all the question come from Northwind database.
 
 # Q1: Show the category_name and description from the categories table sorted by category_name.
+Ans:
+SELECT category_name, description
+FROM categories
+ORDER BY category_name;
