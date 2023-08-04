@@ -155,3 +155,6 @@ where
 Ans:
 select order_id from orders
 where order_id % 2 == 0;
+
+# Q6: Show the category_name and description from the categories table sorted by category_name.
+Ans:
