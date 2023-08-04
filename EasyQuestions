@@ -167,3 +167,14 @@ from
 where
     city like '%L%'
 order by contact_name asc;
+
+# Q7: Show the company_name, contact_name, fax number of all customers that has a fax number. (not null)
+Ans:
+select 
+    company_name,
+    contact_name,
+    fax
+from customers
+where fax is not null;
+
+# Q8: 
