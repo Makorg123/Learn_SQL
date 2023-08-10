@@ -89,7 +89,7 @@ Ans:
 - Born in February, May, or December
 - Their weight would be between 60kg and 80kg
 - Their patient_id is an odd number
-- They are from the city 'Kingston'.
+- They are from the city 'Kingston'
 
 Ans:
 SELECT * FROM patients
