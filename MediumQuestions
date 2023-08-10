@@ -95,7 +95,7 @@ select first_name,last_name, 'Patient' as role from patients
 union all
 select first_name,last_name, 'Doctor' from doctors;
 
-# Q11: Show all allergies ordered by popularity. Remove NULL values from query.
+# Q11: Show all allergies ordered by popularity. Remove NULL values from the query.
 Ans: 
 select 
     allergies,
